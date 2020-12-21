@@ -1,0 +1,11 @@
+<div class="center-column" align =center>
+	<H1> Are you sure you want to delete "{{item}}"?"</H1>
+
+	<a  href="{% url 'list' %}">Cancel</a>
+
+		<H1><form method="POST"  action="">
+		{% csrf_token %}
+		<input type="submit" name="Confirm">
+		</form></H1>
+
+</div>
